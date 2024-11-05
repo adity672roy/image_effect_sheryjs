@@ -151,24 +151,8 @@ body {
   }
 }
 @media screen and (max-width: 720px) {
-  .hero {
-    flex-direction: column;
-    gap: 10vh;
-  }
   .heroright {
-    width: 100%;
-    align-items: flex-start;
-    gap: 10px; 
-  }
-  .imgdiv {
     display: none;
-  }
-  .heroright p {
-    text-align: left; 
-    background-color: rgba(0, 0, 0, 0.288);
-  }
-  .heroright p:nth-child(3) {
-    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 620px) {
