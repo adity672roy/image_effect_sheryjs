@@ -92,7 +92,7 @@ body {
   overflow: hidden;
 }
 .heroleft .elem h1:nth-child(1) {
-  top: 0; 
+  top: 0;
 }
 .heroleft .elem h1 {
   position: absolute;
@@ -140,4 +140,56 @@ body {
 }
 .heroright p:nth-child(3) {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .workingarea {
+    width: 90%;
+  }
+  .heroright {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .hero {
+    flex-direction: column;
+    gap: 10vh;
+  }
+  .heroright {
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px; 
+  }
+  .imgdiv {
+    display: none;
+  }
+  .heroright p {
+    text-align: left; 
+    background-color: rgba(0, 0, 0, 0.288);
+  }
+  .heroright p:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 620px) {
+  .nleft img {
+    height: 40px;
+  }
+  .nleft,
+  .nright {
+    gap: 20px;
+  }
+  .nav a {
+    font-size: 12px;
+  }
+  .heroleft .elem {
+    height: 11vw;
+  }
+  .heroleft button {
+    font-size: 2vw;
+  }
+  .heroleft .elem h1 {
+    font-size: 10vw;
+    line-height: 1.1;
+  }
 }
